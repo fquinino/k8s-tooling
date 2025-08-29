@@ -15,7 +15,7 @@ This repository provides production-ready solutions for these challenges.
 
 ## 🛠️ Tools Included
 
-### 1. **StatefulSet Disk Size Manager** (`manage_statefulset.py`)
+### 1. **StatefulSet Disk Size Manager** (`sts_resizer.py`)
 **Solves**: StatefulSet storage size limitations
 
 **What it does**:
@@ -26,12 +26,12 @@ This repository provides production-ready solutions for these challenges.
 
 **Use case**: Increase OpenSearch/PostgreSQL storage without downtime
 
-### 2. **Job Update & Rerun Manager** (`update_and_rerun_job.py`)
+### 2. **Job Update & Rerun Manager** (`rerun_job.py`)
 **Solves**: Manual job recreation for configuration changes
 
 **What it does**:
 - Updates container images to latest versions
-- Modifies environment variables (e.g., CUSTOMER_INDEXES)
+- Modifies environment variables (e.g., <var_name>)
 - Automatically deletes old jobs and creates new ones
 - Monitors job execution status
 
